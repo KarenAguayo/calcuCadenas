@@ -13,4 +13,7 @@ describe("Sumar", () => {
   it("TOMA EN CUENTA UNA CADENA SEPARADA POR GUIONES", () => {
     expect(sumar("1,2-3,4")).toEqual(10);
   });
+  it("RECONOCE UN SEPARADOR DETERMINADO POR EL USUARIO", () => {
+    expect(sumar("//[;] 1,2;3-4")).toEqual(10);
+  });
 });
